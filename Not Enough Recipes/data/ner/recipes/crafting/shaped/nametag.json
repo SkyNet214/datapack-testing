@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SLL",
+        "BPI",
+        " LL"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:string"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "minecraft:slime_ball"
+        },
+        "P": {
+            "item": "minecraft:paper"
+        },
+        "I": {
+            "item": "minecraft:ink_sac"
+        }
+    },
+    "result": {
+        "item": "minecraft:name_tag"
+    }
+}

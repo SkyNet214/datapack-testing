@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "C",
+        "W"
+    ],
+    "key": {
+        "C": {
+            "item": "coal_block"
+        },
+        "W": {
+            "tag": "minecraft:logs"
+        }
+    },
+    "result": {
+        "item": "minecraft:torch",
+        "count": 36
+    }
+}

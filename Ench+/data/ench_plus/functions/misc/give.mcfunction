@@ -1,0 +1,1 @@
+give @s minecraft:enchanted_book{Count:1b, StoredEnchantments:[{lvl:9s, id:"minecraft:sharpness"}]} 2

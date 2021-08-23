@@ -1,0 +1,1 @@
+tellraw @a {"text": "Not Enough Recipes (NER) loaded", "color": "#CE9F6F","bold": true}

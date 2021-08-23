@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  H",
+        "XLX",
+        "| |"
+    ],
+    "key": {
+        "H": {
+            "item": "minecraft:leather_helmet"
+        },
+        "X": {
+            "item": "minecraft:leather"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "|": {
+            "item": "minecraft:leather_leggings"
+        }
+    },
+    "result": {
+        "item": "minecraft:leather_horse_armor"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  H",
+        "XLX",
+        "| |"
+    ],
+    "key": {
+        "H": {
+            "item": "minecraft:iron_helmet"
+        },
+        "X": {
+            "item": "minecraft:iron_ingot"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "|": {
+            "item": "minecraft:iron_leggings"
+        }
+    },
+    "result": {
+        "item": "minecraft:iron_horse_armor"
+    }
+}

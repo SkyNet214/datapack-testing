@@ -1,0 +1,1 @@
+execute as @e[team=tracker] at @s run function random:turret

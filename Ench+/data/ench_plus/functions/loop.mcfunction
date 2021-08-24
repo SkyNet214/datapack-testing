@@ -1377,7 +1377,7 @@ execute as @e[tag=fresh_craft] run tag @s remove fresh_craft
 
 ## ITEM ENCHANTING
 
-execute as @e[nbt={Item:{tag: {OpEnchanter:1b}}}] at @s run execute as @e[type=item, limit=1, nbt={Item:{id:"minecraft:enchanted_book", Count:1b}}] at @s run execute as @e[type=item, distance=0..1, limit=1, sort=nearest, nbt=!{Item:{id:"minecraft:enchanted_book"}}] run tag @s add enchanting
+execute as @e[nbt={Item:{tag: {OpEnchanter:1b}}}] at @s run execute as @e[type=item, limit=1, nbt={Item:{id:"minecraft:enchanted_book", Count:1b}}] at @s run execute as @e[type=item, distance=0..1, limit=1, sort=nearest, nbt=!{Item:{id:"minecraft:enchanted_book"}}] as @s[type=item, nbt=!{Item:{id:"minecraft:enchanting_table"}}] run tag @s add enchanting
 
 execute as @e[tag=enchanting] at @s run data modify entity @e[type=item, nbt=!{Item:{id:"minecraft:enchanted_book", tag: {OpEnchanter: 1b}}}, limit=1, sort=nearest] Item.tag.Enchantments append from entity @e[type=item, nbt={Item:{id:"minecraft:enchanted_book"}}, limit=1, sort=nearest] Item.tag.StoredEnchantments[0]
 
@@ -1401,3 +1401,7 @@ execute at @e[tag=crafting_result] run kill @e[type=item, limit=1, distance=0..1
 execute at @e[tag=crafting_result] run kill @e[type=item, distance=0..1, limit=1, sort=nearest, nbt={Item:{id:"minecraft:lapis_block", Count:64b}}]
 execute at @e[tag=crafting_result] run kill @e[type=item, distance=0..1, limit=1, sort=nearest, nbt={Item:{id:"minecraft:nether_star", Count:3b}}]
 execute as @e[tag=crafting_result] run tag @s remove crafting_result
+
+# prevent player to place enchanting table
+execute as @e[gamemode=survival, nbt={SelectedItem:{id:"minecraft:enchanting_table", tag:{OpEnchanter:1b}}}] run gamemode adventure @s
+execute as @e[gamemode=adventure, nbt=!{SelectedItem:{id:"minecraft:enchanting_table", tag:{OpEnchanter:1b}}}] run gamemode survival @s

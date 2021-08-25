@@ -8,3 +8,4 @@ execute anchored eyes positioned ^ ^ ^ run function random:raycaster/raycast
 
 # Remove the raycasting tag after raycast completion to prepare fo the next player
 tag @s remove raycasting
+scoreboard players reset .distance tf_rc

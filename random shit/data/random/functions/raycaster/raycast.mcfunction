@@ -18,4 +18,4 @@ particle minecraft:flame ~ ~ ~ 0 0 0 0 1 normal
 #    The "positioned" value specifies the precision
 #    Edit raycast_pass.json in tags/blocks to change which blocks the raycast ignores
 #    "rotated" controls arc/curve of raycast path
-execute if score .distance tf_rc matches ..5000 positioned ^ ^ ^0.1 rotated ~ ~ run function random:raycaster/raycast
+execute if score .distance tf_rc matches ..50 positioned ^ ^ ^0.1 rotated ~ ~ run function random:raycaster/raycast

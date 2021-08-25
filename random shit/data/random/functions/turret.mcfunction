@@ -1,2 +1,2 @@
-tp @s ~ ~ ~ facing entity @p[distance=..5]
-execute run function random:raycaster/start_raycast
+execute run tp @s ~ ~ ~ facing entity @e[type=!#random:turret_blacklist, limit=1, sort=nearest, distance=0.001..10]
+execute if entity @e[type=!#random:turret_blacklist, distance=0.2..5] rotated ~ ~8 run function random:raycaster/start_raycast

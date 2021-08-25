@@ -10,12 +10,10 @@
 #
 #execute positioned ~ ~-1.95 ~ unless entity @s[dx=0] run say leg shot
 
-say I have been hit by a raycast. oof
-particle explosion ~ ~ ~ 0 0 0 0 5
-#kill @s
-
-
+effect give @s resistance 1 3 true
+effect give @s[type=!#random:undead] instant_damage 1 1 true
+effect give @s[type=#random:undead] instant_health 1 1 true
 
 #### Max out range to end the raycast
-scoreboard players set .distance tf_rc 5000
+scoreboard players set .distance tf_rc 2147483645
 

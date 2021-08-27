@@ -1,3 +1,4 @@
+data modify entity @s Radius set value 0f
 particle minecraft:dust 0 0.627 0.741 10 ~ ~ ~ 2 2 2 0 4000 normal
 particle end_rod ~ ~32 ~ 0 400 0 0 5000 normal
 execute as @p[distance=..5] at @s run summon armor_stand ~ ~ ~ {Tags:["Respawnpoint"],Invisible:1b,Invulnerable:1b, NoGravity:1b}

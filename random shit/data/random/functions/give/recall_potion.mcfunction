@@ -1,1 +1,1 @@
-give @s lingering_potion{display:{Name:'{"text":"Recall Potion","color":"dark_aqua","italic":true}'},HideFlags:35,CustomModelData:1,RecallPotionItem:1b,CustomPotionEffects:[{Id:32b,Amplifier:0b,Duration:1}], CustomPotionColor:16777215} 1
+give @s lingering_potion{display:{Name:'{"text":"Recall Potion","color":"dark_aqua","italic":true}'},HideFlags:35,CustomModelData:1,RecallPotionItem:1b,CustomPotionEffects:[{Id:32b,Amplifier:0b,Duration:1}], CustomPotionColor:50175} 1

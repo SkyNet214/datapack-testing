@@ -5,3 +5,6 @@ execute as @e[type=potion, nbt={Item:{tag:{RecallPotionItem:1b}}}] at @s unless 
 execute as @e[tag=RecallPotionArmorStand] at @s run function random:recall_potion/armor_stand
 
 execute as @e[tag=center] at @s run function random:circle/draw
+
+execute at @e[nbt={Item:{tag:{ammo:1b}}}] as @p at @s run function random:awp/start_raycast
+kill @e[nbt={Item:{tag:{ammo:1b}}}]

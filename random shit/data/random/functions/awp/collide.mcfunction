@@ -2,6 +2,7 @@
 
 #### What you do to the target is up to you
 
+particle explosion ~ ~ ~ 0 0 0 0 1 normal
 
 # Detect Headshots/bodyshots/legshots
 #execute positioned ~ ~0.35 ~ unless entity @s[dx=0] positioned ~ ~-0.3 ~ run say headshot
@@ -10,9 +11,10 @@
 #
 #execute positioned ~ ~-1.95 ~ unless entity @s[dx=0] run say leg shot
 
-effect give @s resistance 1 3 true
-effect give @s[type=!#random:undead] instant_damage 1 1 true
-effect give @s[type=#random:undead] instant_health 1 1 true
+#effect give @s resistance 1 3 true
+#effect give @s[type=!#random:undead] instant_damage 1 1 true
+#effect give @s[type=#random:undead] instant_health 1 1 true
+kill @s
 
 #### Max out range to end the raycast
 scoreboard players set .distance tf_rc 2147483645

@@ -5,13 +5,13 @@
 #     Edit not_mob.json in tags/entities to change which entities will not be targetted
 #     Change the "positioned" offsets to change projectile size
 #       - If > 1 block, just use one dx detection
-execute as @e[tag=!raycasting,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function random:awp/collide
+execute as @e[tag=!raycasting,type=!#random:awp_blacklist,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] positioned ~0.99 ~0.99 ~0.99 run function random:awp/collide
 #execute unless block ~ ~ ~ minecraft:air run function random:raycaster/collide
 
 scoreboard players add .distance tf_rc 1
 
 # Make raycast visible
-particle minecraft:flame ~ ~ ~ 0 0 0 0 1 normal
+particle minecraft:dust 255 0 0 1 ~ ~ ~ 0 0 0 0 1 normal
 
 # Repeat the raycast if certain conditions are met
 # Parameters:
@@ -19,4 +19,4 @@ particle minecraft:flame ~ ~ ~ 0 0 0 0 1 normal
 #    The "positioned" value specifies the precision
 #    Edit raycast_pass.json in tags/blocks to change which blocks the raycast ignores
 #    "rotated" controls arc/curve of raycast path
-execute if score .distance tf_rc matches ..20000 positioned ^ ^ ^0.1 rotated ~0.05 ~0.01 run function random:awp/raycast
+execute if score .distance tf_rc matches ..20000 positioned ^ ^ ^0.1 rotated ~ ~ run function random:awp/raycast

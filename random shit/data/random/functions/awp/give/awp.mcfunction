@@ -1,0 +1,1 @@
+give @p spyglass{display:{Name:'[{"text":"ii","color":"white","italic":false,"obfuscated":true},{"text":" AWP ","color":"dark_green","bold":true,"italic":false,"obfuscated":false},{"text":"ii","color":"white","bold":false,"italic":false,"obfuscated":true}]'},HideFlags:32,CustomModelData:1001, awp:1b, StatTrak:0s} 1

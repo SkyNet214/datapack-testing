@@ -6,5 +6,5 @@ execute as @e[tag=RecallPotionArmorStand] at @s run function random:recall_potio
 
 execute as @e[tag=center] at @s run function random:circle/draw
 
-execute as @e[type=item, nbt={Item:{id:"minecraft:iron_nugget",tag:{ammo:1b, used:0b}}}] at @s run function random:awp/setup
-kill @e[type=item, nbt={Item:{id:"minecraft:iron_nugget",tag:{ammo:1b, used:1b}}}]
+execute as @e[type=item, nbt={Item:{id:"minecraft:iron_nugget", Count:1b, tag:{ammo:1b, used:0b}}}] at @s if entity @p[nbt={Inventory:[{id:"minecraft:spyglass",Slot:-106b,tag:{awp:1b}}]}] run function random:awp/setup
+kill @e[type=item, nbt={Item:{id:"minecraft:iron_nugget", Count:1b, tag:{ammo:1b, used:1b}}}]

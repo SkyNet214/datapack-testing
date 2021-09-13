@@ -6,5 +6,5 @@ execute as @e[tag=RecallPotionArmorStand] at @s run function random:recall_potio
 
 execute as @e[tag=center] at @s run function random:circle/draw
 
-execute at @e[nbt={Item:{tag:{ammo:1b}}}] as @p at @s run function random:awp/start_raycast
-kill @e[nbt={Item:{tag:{ammo:1b}}}]
+execute as @e[type=item, nbt={Item:{id:"minecraft:iron_nugget",tag:{ammo:1b, used:0b}}}] at @s run function random:awp/setup
+kill @e[type=item, nbt={Item:{id:"minecraft:iron_nugget",tag:{ammo:1b, used:1b}}}]
